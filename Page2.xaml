@@ -1,0 +1,96 @@
+﻿<Page x:Class="coba2.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:coba2"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="360"
+      Title="Page2">
+
+    <Grid Margin="0,10,0,-10">
+        <Rectangle Fill="#123C69" Margin="0,-3,-0.4,3.4" RenderTransformOrigin="0.501,0.5"/>
+        <Rectangle Fill="#EEE2DC" Height="76" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="361"/>
+        <Rectangle Fill="#EEE2DC" Margin="0,0,-0.4,0.4" Height="68" VerticalAlignment="Bottom"/>
+        <Ellipse Fill="#fff" Margin="118,0,135.6,19.4" Height="100" VerticalAlignment="Bottom" Stroke="#fff" StrokeThickness="4"/>
+        <Image x:Name="image" Height="178" VerticalAlignment="Bottom" Source="youtube-logo-png-2069.png" Margin="76,0,93.6,0.4"/>
+        <Image x:Name="image1" Height="70" Margin="0,0,27.6,-3.6" VerticalAlignment="Bottom" d:LayoutOverrides="Height" Source="About Us.png" HorizontalAlignment="Right" Width="66"/>
+        <Image x:Name="image3" Height="70" Margin="37,0,0,-3.6" VerticalAlignment="Bottom" Source="How To.png" HorizontalAlignment="Left" Width="66" RenderTransformOrigin="-0.086,1.754"/>
+        <Image x:Name="image2" Height="55" VerticalAlignment="Top" Source="YouMate Logo 1.png" Margin="90,10,102.6,0"/>
+
+        <Button x:Name="homebut"  Margin="118,0,135.6,19.4" VerticalAlignment="Bottom" RenderTransformOrigin="1.08,3.058" Height="100" Click="homebut_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentControl>
+
+                        <Border x:Name="myBorder"
+                                BorderBrush="#123C69"
+                                BorderThickness="4"
+                                CornerRadius="360">
+
+                            <ContentPresenter
+                                VerticalAlignment="Bottom"
+                                HorizontalAlignment="Center"
+                                Height="100"
+                                Width="100"/>
+                        </Border>
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Button x:Name="leftbut" Margin="4,0,0,3" VerticalAlignment="Bottom" Height="61" Click="leftbut_Click" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" HorizontalAlignment="Left" Width="114">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"
+                       Height="70"
+                       Width="128">
+
+                    </ContentPresenter>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="rightbut" HorizontalAlignment="Right" Margin="0,0,2.6,-1.6" VerticalAlignment="Bottom" Width="131" Click="button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch"
+                        Height="70"
+                        Width="128">
+                    </ContentPresenter>
+
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image x:Name="image5" Height="78" VerticalAlignment="Bottom" Margin="129,0,136,174" Source="tik-tok-logo-33090.png"/>
+        <Button x:Name="tiktok"  VerticalAlignment="Bottom" Margin="146,0,154,178" Height="50" Width="60" Click="tiktok_Click_1" d:LayoutOverrides="HorizontalAlignment">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+
+
+        <TextBox x:Name="textBox" Margin="37,0,42.6,323.4" TextWrapping="Wrap" Text="Paste here" Height="28" TextChanged="textBox_TextChanged_1" VerticalAlignment="Bottom" d:LayoutOverrides="Height"/>
+
+        <Button x:Name="Download" Content="Download" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="129" Margin="0,0,42.6,287.4" Click="Download_Click" Background="#FFF30606">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Paste" Content="Paste" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="129" Margin="37,0,0,288.4" Background="#FFF6EEEE" Click="button_Click_4" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image x:Name="image6" Height="241" VerticalAlignment="Top" Source="chara1 1.png" Margin="56,146,62.6,0"/>
+        <Image x:Name="image7" Height="23" VerticalAlignment="Bottom" Source="Another Apps.png" Margin="118,0,135.6,234.4"/>
+
+
+
+
+    </Grid>
+</Page>

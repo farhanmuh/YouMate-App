@@ -1,0 +1,73 @@
+﻿<Page x:Class="coba2.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:coba2"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="360"
+      Title="Page5">
+
+    <Grid>
+        <Rectangle Fill="#ffff" Margin="0,-3,-0.4,3.4" RenderTransformOrigin="0.501,0.5"/>
+        <Rectangle Fill="#EEE2DC" Height="76" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="361"/>
+        <Rectangle Fill="#EEE2DC" Margin="0,0,-0.4,0.4" Height="68" VerticalAlignment="Bottom"/>
+        <Ellipse Fill="#fff" Margin="118,0,135.6,19.4" Height="100" VerticalAlignment="Bottom" Stroke="#fff" StrokeThickness="4"/>
+        <Image x:Name="image" Height="109" VerticalAlignment="Bottom" Source="Back.png" Margin="103,0,119,15"/>
+        <Image x:Name="image1" Height="70" Margin="0,0,27.6,-3.6" VerticalAlignment="Bottom" d:LayoutOverrides="Height" Source="About Us.png" HorizontalAlignment="Right" Width="66"/>
+        <Image x:Name="image3" Height="70" Margin="37,0,0,-3.6" VerticalAlignment="Bottom" Source="How To.png" HorizontalAlignment="Left" Width="66" RenderTransformOrigin="-0.086,1.754"/>
+        <Image x:Name="image2" Height="55" VerticalAlignment="Top" Source="YouMate Logo 1.png" Margin="90,10,102.6,0"/>
+
+        <Button x:Name="homebut"  Margin="118,0,136,19" VerticalAlignment="Bottom" RenderTransformOrigin="1.08,3.058" Height="105" Click="homebut_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentControl>
+
+                        <Border x:Name="myBorder"
+                                BorderBrush="#fff"
+                                BorderThickness="4"
+                                CornerRadius="360">
+
+                            <ContentPresenter
+                                VerticalAlignment="Bottom"
+                                HorizontalAlignment="Center"
+                                Height="100"
+                                Width="100"/>
+                        </Border>
+                    </ContentControl>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Button x:Name="leftbut" Margin="4,0,0,-3.6" VerticalAlignment="Bottom" Height="68" Click="leftbut_Click" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" HorizontalAlignment="Left" Width="114">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter
+                       VerticalAlignment="Stretch"
+                       HorizontalAlignment="Stretch"
+                       Height="70"
+                       Width="128">
+
+                    </ContentPresenter>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="rightbut" HorizontalAlignment="Right" Margin="0,0,2.6,-1.6" VerticalAlignment="Bottom" Width="131" Click="button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch"
+                        Height="70"
+                        Width="128">
+                    </ContentPresenter>
+
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image x:Name="image4" HorizontalAlignment="Left" Height="508" VerticalAlignment="Top" Width="264" Margin="37,114,0,0" Source="Step.png"/>
+
+
+    </Grid>
+</Page>
